@@ -3,6 +3,7 @@
 @import "_banner_top.scss";
 @import "_input_form.scss";
 @import "_normalize.scss";
+@import "_style-gv-static-page.scss";
 .text-main-in-min-br {
   max-width: 1116px;
   @extend %pos-cent-marg;
@@ -261,15 +262,16 @@
   margin-left: auto;
 }
 
-.sows-text-in-min {
-  padding-left: 84px;
+.change-instal-comp {
+  margin-right: 61px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  text-align: right;
 }
 
-.sows-text-in-min > h5 {
+.change-instal-comp > h6 {
   @extend %text-main;
   font-size: 20px;
   @extend %marg-bott;
@@ -277,7 +279,7 @@
   z-index: 7;
 }
 
-.sows-text-in-min > p {
+.change-instal-comp > p {
   max-width: 640px;
   @extend %text-main;
   font-size: 18px;
@@ -285,11 +287,11 @@
   z-index: 5;
 }
 
-.sows-text-in-min > img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 4;
+.change-wrp-instal-comp {
+  margin-bottom: 40px;
+  padding: 0 16px;
+  display: flex;
+  @extend %pos-cent-flex;
 }
 
 .wrp-cooperation-mob-in-min {
@@ -348,6 +350,19 @@
 }
 
 @media (max-width: 1164px) {
+  .change-instal-comp > h6 {
+    margin-bottom: 30px;
+  }
+  .change-wrp-instal-comp {
+    flex-direction: column;
+  }
+  .change-instal-comp {
+    margin-right: 0;
+    text-align: center;
+  }
+  .change-instal-comp > p {
+    margin-bottom: 30px;
+  }
   .instal-img-in-min {
     position: relative;
     top: auto;

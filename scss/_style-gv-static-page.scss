@@ -37,10 +37,10 @@
 .consultation-br > p > a {
   color: $color-main;
   text-decoration: underline;
-} 
+}
 .consultation-br > p > a > img {
   display: inherit;
-} 
+}
 
 .wrp-advantages-br {
   @extend %pos-cent-marg;
@@ -103,11 +103,29 @@
 }
 
 .sale-wrp-br {
-  @include box-green;
+  @extend %pos-cent-marg;
+  max-width: 960px;
+  margin-bottom: 76px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  @extend %input-hov-act;
+  border-radius: 8px;
+  font-family: $font-roboto-reg;
+  box-sizing: border-box;
 }
 
 .sale-b2b-wrp-br {
-  @include box-green;
+  @extend %pos-cent-marg;
+  max-width: 960px;
+  margin-bottom: 76px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  @extend %input-hov-act;
+  border-radius: 8px;
+  font-family: $font-roboto-reg;
+  box-sizing: border-box;
 }
 
 .sale-text-br {
